@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lançamento de Notas</title>
+  <style>
+    body {
+      background-color: #0c1c2c;
+      color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .container {
+      background: #ffffff;
+      color: #000000;
+      border: 3px solid #22d3ee;
+      border-radius: 10px;
+      padding: 30px;
+      width: 800px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    label, select, input {
+      font-size: 16px;
+    }
+
+    select, input[type="number"] {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #0c1c2c;
+      color: white;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #22d3ee;
+      color: #0c1c2c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LAN&Ccedil;AMENTO DE NOTAS</h1>
+    <label for="disciplina"><strong>Selecione a disciplina</strong></label>
+    <br>
+    <select id="disciplina" name="disciplina">
+      <option>Introdu&ccedil;&atilde;o &agrave; Inform&aacute;tica</option>
+      <option>Linguagens de Programa&ccedil;&atilde;o</option>
+      <option>Programa&ccedil;&atilde;o de Computadores</option>
+    </select>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome do aluno</th>
+          <th>Prova 1</th>
+          <th>Prova 2</th>
+          <th>Exame</th>
+          <th>M&eacute;dia</th>
+          <th>Faltas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joana da Silva</td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10"></td>
+          <td><input type="number" readonly></td>
+          <td><input type="number" min="0" max="16" required></td>
+        </tr>
+        <tr>
+          <td>Maria do Socorro</td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10"></td>
+          <td><input type="number" readonly></td>
+          <td><input type="number" min="0" max="16" required></td>
+        </tr>
+        <tr>
+          <td>Pedro Santos</td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10" required></td>
+          <td><input type="number" min="0" max="10"></td>
+          <td><input type="number" readonly></td>
+          <td><input type="number" min="0" max="16" required></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="buttons">
+      <button type="submit">Salvar</button>
+      <button type="reset">Limpar</button>
+    </div>
+  </div>
+</body>
+</html>
